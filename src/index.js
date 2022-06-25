@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import State from './components/State';
+import Styling from './components/styling'; 
+import Componenets from './components/Components';
+import Props from './components/Props'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <State />
+    <Styling /> 
+    <Componenets />
+    <Props /> 
   </React.StrictMode>
 );
 
