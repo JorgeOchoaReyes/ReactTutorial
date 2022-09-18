@@ -1,29 +1,33 @@
 import React, {useState} from 'react'; 
 import './App.css';
+import screenshot from './ReactComponent.PNG'
 
 function Componenets() { 
 
   return (
-    <div style={{paddingLeft: '20px'}}>
-      <header style={{fontSize: '20pt', widht: '100%', borderBottom: '1px solid black'}}> Componenets in React </header>
-      <p> Making components is probably the most important part of react.  </p>
-      <p> This file is it self a component. </p>
-      <p> Creating components is very easy, they are simply just a function that have a return function. </p>
-      <p> Here is an exmple: </p>
-      <ExampleComponent /> 
-      <p> Notice that any html tags that are not the usual tags are teal color. </p>
-      <p> Additionally, custom components start with a capital letter. </p>
-      <p> Last note about custom components, the return call has to have its arguements wrapped in parenthesis.</p>
-      <p> Like so: return{`(<p> example</p>)`}</p>
-
-      <br /> 
+    <div>
+      <header> Components in React </header>
+      <div style={{padding: '0px 10px'}}>
+        <p className="important"> Making components is fundamental to using React!  </p>
+        <p> This file itself is a component. </p>
+        <p> Creating a component is very easy, they are simply a function that have a return function. </p>
+        <p> Here is an exmple of a custom component that returns text: </p>
+        <ExampleComponent /> 
+        <img src={screenshot} alt='' title="LOOK AT THE EXAMPLE COMPONENT" height={{}} style={{display: 'block', margin: 'auto'}}/>
+        <p> • Non-standard html tags are not the usual teal color - they are a shade of green. </p>
+        <p> • Custom components start with a capital letter. </p>
+        <p> • The return call has to have its arguements wrapped in parenthesis like so: return{`(<p> example</p>)`}.</p>
+        <br/> 
+        <div className='space'/>
+        <br/>
+      </div>
     </div>
   );
 }
 
 const ExampleComponent = () => {
     return (
-        <p> Here is a custom component, go to line 22-26 in the 'Componenets.js' file to see this component. </p>
+        <p style={{textAlign: 'center', fontSize: '20pt', color: 'red', fontWeight: 'bold'}}> I am a custom component, go ...     to line 27-31 in the 'Componenets.js' file to see me! </p>
     )
 }
 
